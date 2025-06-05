@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:our_app/widgets/CoustomCard.dart';
+import 'package:flutter_application_1/widgets/CoustomCard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,28 +32,48 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
-  Widget build(BuildContext context) {
+   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Row(
-        children: [
-          Coustomcard(
-            colors: Colors.green,
-            margin: EdgeInsets.only(left: 12, bottom: 12, top: 12),
-          ),
-          Coustomcard(
-            colors: Colors.blue,
-            margin: EdgeInsets.only(left: 12, bottom: 12, top: 12),
-          ),
-          Coustomcard(
-            colors: Colors.orange,
-            margin: EdgeInsets.only(left: 12, bottom: 12, top: 12, right: 12),
-          ),
-        ],
+      body: SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        child: Row(
+          children: [
+            Coustomcard(
+              colors: Colors.red,
+              name : 'Syc',
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+            ),
+            Coustomcard(
+              colors: Colors.green,
+              name : 'Aarya',
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
+            ),
+            Coustomcard(
+              colors: Colors.blue,
+              name : 'Risika',
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+            Coustomcard(
+              colors: Colors.pink,
+              name : 'Kanchan',
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+            Coustomcard(
+              colors: Colors.yellow,
+              name : 'Jiten',
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+            Coustomcard(
+              colors: Colors.cyan,
+              name : 'Rabina',
+              margin: EdgeInsets.only(left: 12, top: 12, bottom: 12, right: 12),
+            ),
+          ],
+        ),
       ),
     );
   }
