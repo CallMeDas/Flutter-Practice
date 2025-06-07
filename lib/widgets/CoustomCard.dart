@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/FbFeed.dart';
 
 class Coustomcard extends StatelessWidget {
   Color colors;
@@ -48,5 +49,6 @@ class Coustomcard extends StatelessWidget {
         ],
       ),
     );
+    Fbfeed();
   }
 }
