@@ -49,6 +49,6 @@ class Coustomcard extends StatelessWidget {
         ],
       ),
     );
-    Fbfeed();
+
   }
 }

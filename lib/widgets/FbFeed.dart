@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/FbFeed.dart';
 
 class Fbfeed extends StatelessWidget {
-  const Fbfeed({super.key});
+  String desc;
+  String name;
+
+   Fbfeed( {super.key, required this.name, required this.desc});
 
   @override
   Widget build(BuildContext context) {
@@ -34,10 +38,10 @@ class Fbfeed extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Its Syc', style: TextStyle(fontSize: 20),),
+                        Text(name, style: TextStyle(fontSize: 20),),
                         Row(
                           children: [
-                            Text('12 .',style: TextStyle(fontSize: 20)),
+                            Text('12. ',style: TextStyle(fontSize: 20)),
                             Icon(
                               Icons.language, size: 20,
                             )
@@ -65,7 +69,7 @@ class Fbfeed extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(padding: const EdgeInsets.only(left: 12, right: 12),
-              child: Text('I am here to post my adventure!'),
+              child: Text(desc),
               ),
               SizedBox(
                 height: 12,

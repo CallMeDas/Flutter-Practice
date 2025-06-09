@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Yo'),
+      home: const MyHomePage(title: 'FaceBook'),
     );
   }
 }
@@ -79,7 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
           ),
 
-          Fbfeed(),
+          Fbfeed(name: 'Syc', desc: 'I am here to post my adventure!',),
+          Fbfeed(name: 'Aarya',desc: 'New post'),
+          Fbfeed(name: 'Risika', desc: 'Happy Happy',),
+          Fbfeed(name: 'Kanchan',desc:  'Trying new things!'),
+          Fbfeed(name: 'Rabina', desc: 'Learing the things!',),
+          Fbfeed(name: 'Jiten', desc: 'Loadig...',),
+         
         ],
       ),
       
