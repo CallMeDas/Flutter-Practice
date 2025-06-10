@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Coustomcard(
               colors: Colors.red,
-              name : 'Syc',
+              name : 'Its Syc',
               margin: EdgeInsets.only(left: 12, top: 12, bottom: 12),
             ),
             Coustomcard(
